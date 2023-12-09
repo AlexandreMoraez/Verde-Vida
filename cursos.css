@@ -1,0 +1,73 @@
+button {
+    height: 90px;
+    position: absolute;
+    right: 0px;
+    background: #00ff15;
+    font-size: #222222;
+    width: 100px;
+    border-radius: 20px;
+    border-color: #000;
+}
+
+.cadastrar-se {
+    height: 90px;
+    position: absolute;
+    right: 150px;
+    background: #00ff15;
+    font-size: #222;
+    width: 100px;
+    border-radius: #000;
+    }
+.cadastrar-se:hover {
+    color: #ffffff;
+}
+
+
+.foto {
+    display: flex;
+}
+.imagemajustada{
+
+    height: 300px;
+}
+
+html {
+    font-family: 'Alata', sans-serif;
+}
+
+.VerdeVida {
+    font-size: 100px;
+    color: #03cf14;
+    border-color: #ffffff;
+}
+
+body {
+    background: url(fundo\ .jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(146, 255, 87);
+    font-size: 30px;
+}
+
+ h1 {
+    font-size: 50px;
+    color: #03cf14;
+}
+
+header {
+    background-color: rgb(3, 98, 39);
+    border-radius: 30px;
+}
+.Cursos {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
