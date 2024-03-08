@@ -145,6 +145,7 @@ html {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    z-index: 15;
 }
 .container {
     display: block;
@@ -591,6 +592,27 @@ html {
     background-color: rgba(10, 100, 10, 0.1);
     box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
     transition-duration: 0.3s;
+}
+.maispbls {
+    background-color: #1b5c63;
+    height: 100%;
+    width: 250px;
+    right: 0px;
+    position: fixed;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    display: none;
+    z-index: 5;
+    border-left: 3px solid rgb(31, 230, 91);
+    transition-duration: 0.3s;
+}
+@keyframes pbls {
+    from {right: -250px;}
+    to {right: 0px;}
+}
+@keyframes pblsback {
+    from {right: 0px;}
+    to {right: -250px;}
 }
 @keyframes apar {
     from{opacity: 0; left: 40px;}
