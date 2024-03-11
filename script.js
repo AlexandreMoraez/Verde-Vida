@@ -28,6 +28,9 @@ btn_ong.addEventListener("click", () => {
         shadow.style.display = "block";
         shadow.style.animationName = "shatop";
         pbls.style.animationName = "pblsback";
+        setTimeout(() => {
+            pbls.style.display = "none";
+        }, 200)
     }
 })
 btn_pbl.addEventListener("click", () => {
@@ -45,5 +48,8 @@ btn_pbl.addEventListener("click", () => {
         shadow.style.display = "block";
         shadow.style.animationName = "sha";
         ongs.style.animationName = "ongback";
+        setTimeout(() => {
+            ongs.style.display = "none";
+        }, 300)
     }
 })

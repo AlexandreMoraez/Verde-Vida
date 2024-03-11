@@ -74,7 +74,7 @@ body {
     border: 1px solid #18525a;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #00ff73;
+    background-color: #9cfdc8;
 }
 ::-webkit-scrollbar-thumb:active {
     background-color: #52ac7a;
@@ -199,7 +199,7 @@ html {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 101%;
+    width: 100%;
     height: 500px;
     background: linear-gradient(48deg, rgba(10,87,65,1) 0%, rgba(25,204,27,1) 75%, rgba(41,65,27,1) 100%);
     border-top: 5px solid #2ead49;
@@ -286,6 +286,7 @@ html {
     border-radius: 20px;
     transition-duration: 0.3s;
     z-index: 4;
+    cursor: pointer;
 }
 .cont1 p {
     color: #9ae1eb;
@@ -367,6 +368,7 @@ html {
     border-radius: 20px;
     transition-duration: 0.3s;
     z-index: 4;
+    cursor: pointer;
 }
 .cont3 p {
     color: #dcf1a0;
@@ -845,10 +847,14 @@ html {
     position: fixed;
     align-items: center;
     box-shadow: inset 0px 0px 1000px 100px #000;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 #imgn1 {
     margin: 0;
     height: 500px;
+    width: 72%;
     border: 3px solid #2c6e08;
     border-radius: 30px;
 }
@@ -995,6 +1001,40 @@ html {
     background-color: rgba(0, 10, 0, 0.8);
     border-color: #65c28f;
 }
+#vvbtn {
+    height: 80px;
+    border-radius: 200px;
+    width: 80px;
+    background-color: #007a33;
+}
+#vvbtn img {
+    height: 50px;
+}
+#abtn {
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+}
+.btndiv {
+    background-color: #18525a;
+    width: 51%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    display: none;
+}
+@keyframes img {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes imgback {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
 @keyframes shatop {
     from {box-shadow: inset 0px 0px 300px rgba(0, 0, 0, 0);}
     to {box-shadow: inset 0px 300px 800px rgba(0, 0, 0, 0.6)}
@@ -1069,6 +1109,7 @@ html {
     .ctmain {
         display: grid;
         height: 2000px;
+        width: 99%;
     }
     #ong1 a, #ong2 a, #ong3 a {
         width: 400px;
@@ -1082,6 +1123,9 @@ html {
         width: auto;
         margin: 0 auto;
         text-align: center;
+    }
+    .inimg {
+        width: 100%;
     }
 }
 @media screen and (max-width: 1030px) {
@@ -1102,15 +1146,30 @@ html {
         to{opacity: 1; left: 50px;}
     }
 }
+@media screen and (max-width: 930px) {
+    #imgn1 {
+        height: 50%;
+    }
+}
 @media screen and (max-width: 830px) {
     .borda, .borda2 {
         display: none;
     }
     .btns {
-        width: 100%;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0;
+    }
+    @keyframes pblsback {
+        from {right: 0px;}
+        to {right: -500px;}
+    }
+    #btn_ong {
+        width: 140px;
+        height: 40px;
+        margin: 5px;
     }
 }
 @media screen and (max-width: 745px) {
@@ -1136,11 +1195,14 @@ html {
     #tvimg {
         display: none;
     }
+    #abtn {
+        display: block;
+    }
+    .btndiv {
+        display: flex;
+    }
 }
 @media screen and (max-width: 570px) {
-    #nome, #tvimg {
-        display: none;
-    }
     .vv {
         box-shadow: none;
     }
@@ -1152,8 +1214,6 @@ html {
         justify-content: center;
     }
     #btn_ong {
-        width: 140px;
-        height: 45px;
         margin: 0 auto;
     }
 }
@@ -1183,7 +1243,7 @@ html {
 }
 @media screen and (max-width: 420px) {
     .container {
-        width: 100%;
+        width: 98%;
     }
     #mpd {
         display: block;
@@ -1194,7 +1254,7 @@ html {
     }
     .cont1, .cont2, .cont3 {
         height: 800px;
-        width: 100%;
+        width: 95%;
     }
     .cont1 p, .cont2 p, .cont3 p {
         width: 200px;
@@ -1211,10 +1271,13 @@ html {
     }
     .ctmain {
         height: 2500px;
-        width: 100%;
+        width: 98%;
     }
     .vv {
         display: none;
+    }
+    .maispbls {
+        width: 100%;
     }
 }
 @media screen and (max-width: 300px) {
