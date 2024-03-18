@@ -627,6 +627,7 @@ html {
     border-left: 3px solid rgb(31, 230, 91);
     transition-duration: 0.3s;
     box-shadow: 5px 3px 10px #1e7c33;
+    margin-top: 120px;
 }
 .maispbls:hover {
     border-color: #75c58d;
@@ -643,7 +644,6 @@ html {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border-bottom: 3px solid #4cca67;
 }
 .sha {
     height: 100%;
@@ -662,7 +662,6 @@ html {
     height: 160px;
     display: flex;
     margin: 0 auto;
-    margin-top: 120px;
     border-top: 3px solid #4cca67;
     border-bottom: 3px solid #4cca67;
     background: rgba(0, 200, 0, 0.2);
@@ -1027,6 +1026,14 @@ html {
     padding-left: 20px;
     display: none;
 }
+.maispbls::-webkit-scrollbar {
+    background-color: #a2aef1;
+    border: 1px solid #06dbad;
+}
+.maispbls::-webkit-scrollbar-thumb {
+    background-color: #79be4b;
+    border: 1px solid #00ac0e;
+}
 @keyframes img {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -1113,6 +1120,10 @@ html {
     }
     #ong1 a, #ong2 a, #ong3 a {
         width: 400px;
+    }
+    .maispbls {
+        overflow-y: scroll;
+        width: 350px;
     }
 }
 @media screen and (max-width: 1065px) {
@@ -1210,7 +1221,7 @@ html {
         display: grid;
         padding-left: 0px;
         padding-right: 0px;
-        width: 100%;
+        width: 50%;
         justify-content: center;
     }
     #btn_ong {
@@ -1288,5 +1299,8 @@ html {
     #cons {
         left: 10px;
         width: 90%;
+    }
+    .pb1 h1, .pb2 h1, .pb3 h1, .pb4 h1 {
+        font-size: 20px;
     }
 }
